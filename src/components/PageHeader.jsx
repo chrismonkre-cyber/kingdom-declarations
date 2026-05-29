@@ -9,8 +9,8 @@ export default function PageHeader({ title }) {
         className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-lg"
       />
       <h1
-        className="text-3xl md:text-5xl font-black text-center drop-shadow-lg"
-        style={{ color: "#d4a843", textShadow: "0 2px 16px rgba(212,168,67,0.5), 0 4px 8px rgba(0,0,0,0.8)" }}
+        className="text-3xl md:text-5xl font-black text-center"
+        style={{ color: "#f5d060", textShadow: "0 0 24px rgba(245,208,96,0.7), 0 0 8px rgba(212,168,67,0.5), 0 3px 12px rgba(0,0,0,0.95), 0 6px 16px rgba(0,0,0,0.85)" }}
       >
         {title}
       </h1>

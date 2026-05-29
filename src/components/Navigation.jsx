@@ -17,7 +17,7 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop top nav */}
-      <nav className="hidden md:flex items-center justify-between px-6 py-3 bg-black/70 backdrop-blur-md border-b border-amber-500/30 sticky top-0 z-50">
+      <nav className="hidden md:flex items-center justify-between px-6 py-3 bg-black/55 backdrop-blur-md border-b border-amber-500/30 sticky top-0 z-50">
         <Link to="/" className="flex items-center gap-3 font-black text-lg tracking-wide" style={{ color: "#d4a843" }}>
           <img
             src={LOGO_URL}
@@ -31,11 +31,12 @@ export default function Navigation() {
             <Link
               key={path}
               to={path}
-              className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-all ${
                 pathname === path
-                  ? "bg-amber-500/20 text-amber-300"
-                  : "text-amber-100/80 hover:text-amber-200 hover:bg-white/5"
+                  ? "bg-amber-500/25 text-amber-200"
+                  : "text-amber-100 hover:text-white hover:bg-white/8"
               }`}
+          style={pathname === path ? { textShadow: "0 0 12px rgba(245,208,96,0.6)" } : {}}
             >
               {label}
             </Link>
@@ -44,7 +45,7 @@ export default function Navigation() {
       </nav>
 
       {/* Mobile bottom nav */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center py-2 px-1 bg-black/85 backdrop-blur-md border-t border-amber-500/30">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center py-2 px-1 bg-black/70 backdrop-blur-md border-t border-amber-500/35">
         {NAV_ITEMS.map(({ path, label, icon: Icon }) => (
           <Link
             key={path}
@@ -52,7 +53,7 @@ export default function Navigation() {
             className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg text-[10px] font-semibold transition-all ${
               pathname === path
                 ? "text-amber-300"
-                : "text-amber-100/60"
+                : "text-amber-100/80"
             }`}
           >
             <Icon className="w-5 h-5" />

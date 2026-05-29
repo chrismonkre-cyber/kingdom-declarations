@@ -286,10 +286,22 @@ export const DECLARATION_CATEGORIES = [
 ];
 
 export const RESOURCES = [
-  { title: "Kingdom Mandate Ministry", url: "https://kingdommandateministry.com", description: "Our main ministry site — teaching, events, and more." },
+  { title: "Main Ministry Site", url: "https://kingdommandateministry.com", description: "Our main ministry site — teaching, events, and more." },
   { title: "The Bible Companion", url: "https://thebiblecompanion.online", description: "Daily Bible reading and study companion." },
   { title: "Kingdom Prayer Wall", url: "https://prayer.kingdommandateministry.com", description: "Submit and pray over prayer requests." },
   { title: "Kingdom Fire Companion", url: "https://fire.kingdommandateministry.com", description: "Spirit-filled devotionals and fire prayers." },
   { title: "Kingdom Pathway", url: "https://pathway.kingdommandateministry.com", description: "Guided spiritual growth journey." },
-  { title: "YouTube", url: "https://www.youtube.com/@KingdomMandateMinistry", description: "Sermons, teachings, and worship." },
+  { title: "Kingdom Declarations", url: "https://declarations.kingdommandateministry.com", description: "Speak the Word. Stand in Faith. Release Kingdom Fire." },
+  { title: "Kingdom Healing Room", url: "https://healing.kingdommandateministry.com", description: "Faith-filled healing declarations and prayer." },
+  { title: "Kingdom Purpose Finder", url: "https://purpose.kingdommandateministry.com", description: "Discover your God-given purpose and calling." },
+  { title: "Kingdom Identity", url: "https://identity.kingdommandateministry.com", description: "Know who you are in Christ." },
+  { title: "Kingdom Gift Finder", url: "https://gifts.kingdommandateministry.com", description: "Discover your spiritual gifts." },
+  { title: "Kingdom Battle Plan", url: "https://battle.kingdommandateministry.com", description: "Spiritual warfare strategies and declarations." },
+  { title: "Kingdom Grace Vault", url: "https://grace.kingdommandateministry.com", description: "Deep into the grace and goodness of God." },
+  { title: "Kingdom Revival Fire", url: "https://revival.kingdommandateministry.com", description: "Ignite revival in your heart and community." },
+  { title: "Kingdom Family Altar", url: "https://family.kingdommandateministry.com", description: "Build a powerful family prayer altar." },
+  { title: "Kingdom Marketplace Mandate", url: "https://marketplace.kingdommandateministry.com", description: "Faith and calling in the workplace." },
+  { title: "Kingdom Freedom", url: "https://freedom.kingdommandateministry.com", description: "Break free and walk in Kingdom liberty." },
+  { title: "YouTube Channel", url: "https://www.youtube.com/@KingdomMandateMinistry", description: "Sermons, teachings, and worship." },
+  { title: "Partner / Sow", url: "https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com", description: "Support the ministry and help advance the Kingdom." },
 ];

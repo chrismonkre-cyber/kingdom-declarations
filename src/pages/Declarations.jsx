@@ -10,10 +10,10 @@ export default function Declarations() {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <PageWrapper images={IMAGES.declarations} overlay="rgba(0,0,0,0.22)">
+    <PageWrapper images={IMAGES.declarations} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Declaration Categories" />
-        <p className="text-amber-100/80 text-center text-sm mb-8">Choose a category and declare God's Word with boldness.</p>
+        <p className="text-amber-200 text-center text-sm mb-8">Choose a category and declare God's Word with boldness.</p>
 
         <div className="space-y-3">
           {DECLARATION_CATEGORIES.map((cat) => {

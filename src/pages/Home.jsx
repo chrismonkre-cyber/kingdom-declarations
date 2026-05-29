@@ -14,17 +14,28 @@ const SECTIONS = [
 
 export default function Home() {
   return (
-    <PageWrapper images={IMAGES.home} overlay="rgba(0,0,0,0.20)">
+    <PageWrapper images={IMAGES.home} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-4xl mx-auto px-4 pt-16 md:pt-24 pb-12">
         {/* Hero */}
         <div className="text-center mb-12">
-          <PageHeader title="Kingdom Declarations" />
-          <p className="text-amber-100 text-lg md:text-xl font-semibold mb-3 drop-shadow-md">
-            Speak the Word. Stand in Faith. Release Kingdom Fire.
-          </p>
-          <p className="text-amber-100/80 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            A Spirit-filled declaration companion to help you speak Scripture, stand on God's promises, and release faith-filled words over every area of life.
-          </p>
+          <div
+            className="inline-block rounded-3xl px-6 py-6 mb-2 backdrop-blur-md border border-amber-600/25"
+            style={{ background: "rgba(40, 12, 24, 0.42)", boxShadow: "0 0 24px rgba(212, 168, 67, 0.15), 0 8px 24px rgba(0,0,0,0.25), inset 0 1px 12px rgba(255,255,255,0.08)" }}
+          >
+            <PageHeader title="Kingdom Declarations" />
+            <p
+              className="text-amber-50 text-lg md:text-xl font-bold mb-3"
+              style={{ textShadow: "0 1px 8px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)" }}
+            >
+              Speak the Word. Stand in Faith. Release Kingdom Fire.
+            </p>
+            <p
+              className="text-amber-50/95 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-medium"
+              style={{ textShadow: "0 1px 6px rgba(0,0,0,0.85)" }}
+            >
+              A Spirit-filled declaration companion to help you speak Scripture, stand on God's promises, and release faith-filled words over every area of life.
+            </p>
+          </div>
         </div>
 
         {/* CTA Buttons */}
@@ -49,7 +60,7 @@ export default function Home() {
             <PenLine className="w-4 h-4" /> Journal
           </Link>
           <a
-            href="https://kingdommandateministry.com"
+            href="https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm text-amber-200 border border-amber-500/40 bg-black/50 backdrop-blur-sm shadow-lg transition-transform hover:scale-105"

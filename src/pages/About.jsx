@@ -1,22 +1,35 @@
 import PageWrapper from "../components/PageWrapper";
 import KCard from "../components/KCard";
 import PageHeader from "../components/PageHeader";
+import InstallApp from "../components/InstallApp";
 import { IMAGES } from "../data/images";
 import { ExternalLink } from "lucide-react";
 
 const LINKS = [
-  { label: "Main Site", url: "https://kingdommandateministry.com" },
-  { label: "Bible Companion", url: "https://thebiblecompanion.online" },
-  { label: "Prayer Wall", url: "https://prayer.kingdommandateministry.com" },
-  { label: "Fire Companion", url: "https://fire.kingdommandateministry.com" },
-  { label: "Pathway", url: "https://pathway.kingdommandateministry.com" },
-  { label: "YouTube", url: "https://www.youtube.com/@KingdomMandateMinistry" },
+  { label: "Main Ministry Site", url: "https://kingdommandateministry.com" },
+  { label: "The Bible Companion", url: "https://thebiblecompanion.online" },
+  { label: "Kingdom Prayer Wall", url: "https://prayer.kingdommandateministry.com" },
+  { label: "Kingdom Fire Companion", url: "https://fire.kingdommandateministry.com" },
+  { label: "Kingdom Pathway", url: "https://pathway.kingdommandateministry.com" },
+  { label: "Kingdom Declarations", url: "https://declarations.kingdommandateministry.com" },
+  { label: "Kingdom Healing Room", url: "https://healing.kingdommandateministry.com" },
+  { label: "Kingdom Purpose Finder", url: "https://purpose.kingdommandateministry.com" },
+  { label: "Kingdom Identity", url: "https://identity.kingdommandateministry.com" },
+  { label: "Kingdom Gift Finder", url: "https://gifts.kingdommandateministry.com" },
+  { label: "Kingdom Battle Plan", url: "https://battle.kingdommandateministry.com" },
+  { label: "Kingdom Grace Vault", url: "https://grace.kingdommandateministry.com" },
+  { label: "Kingdom Revival Fire", url: "https://revival.kingdommandateministry.com" },
+  { label: "Kingdom Family Altar", url: "https://family.kingdommandateministry.com" },
+  { label: "Kingdom Marketplace Mandate", url: "https://marketplace.kingdommandateministry.com" },
+  { label: "Kingdom Freedom", url: "https://freedom.kingdommandateministry.com" },
+  { label: "YouTube Channel", url: "https://www.youtube.com/@KingdomMandateMinistry" },
   { label: "Contact", url: "mailto:kingdommm.chris@gmail.com" },
+  { label: "Partner / Sow", url: "https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com" },
 ];
 
 export default function About() {
   return (
-    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.22)">
+    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="About" />
         <p className="text-amber-100/80 text-center text-sm mb-8">Kingdom Mandate Ministry</p>
@@ -33,8 +46,8 @@ export default function About() {
           </div>
         </KCard>
 
-        <KCard>
-          <h3 className="font-black text-base mb-4" style={{ color: "#d4a843" }}>Connect With Us</h3>
+        <KCard className="mb-6">
+          <h3 className="font-black text-base mb-4" style={{ color: "#d4a843" }}>Kingdom Mandate Ministry Ecosystem</h3>
           <div className="space-y-2">
             {LINKS.map(({ label, url }) => (
               <a
@@ -51,6 +64,8 @@ export default function About() {
             ))}
           </div>
         </KCard>
+
+        <InstallApp />
       </div>
     </PageWrapper>
   );

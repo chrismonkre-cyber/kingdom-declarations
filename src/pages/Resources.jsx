@@ -1,13 +1,14 @@
 import PageWrapper from "../components/PageWrapper";
 import KCard from "../components/KCard";
 import PageHeader from "../components/PageHeader";
+import InstallApp from "../components/InstallApp";
 import { IMAGES } from "../data/images";
 import { RESOURCES } from "../data/declarations";
-import { ExternalLink, Mail, Heart } from "lucide-react";
+import { ExternalLink, Mail } from "lucide-react";
 
 export default function Resources() {
   return (
-    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.22)">
+    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Kingdom Resources" />
         <p className="text-amber-100/80 text-center text-sm mb-8">Connect with the Kingdom Mandate Ministry ecosystem.</p>
@@ -32,6 +33,8 @@ export default function Resources() {
           <h3 className="font-black text-base mb-1" style={{ color: "#d4a843" }}>Contact</h3>
           <a
             href="mailto:kingdommm.chris@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-amber-200 hover:text-amber-100 text-sm underline underline-offset-2 transition-colors"
           >
             kingdommm.chris@gmail.com
@@ -39,13 +42,14 @@ export default function Resources() {
         </KCard>
 
         {/* Partner */}
-        <a href="https://kingdommandateministry.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com" target="_blank" rel="noopener noreferrer" className="block mb-4">
           <KCard className="text-center hover:border-amber-400/50 transition-all">
-            <Heart className="w-6 h-6 text-amber-400 mx-auto mb-2" />
-            <h3 className="font-black text-base mb-1" style={{ color: "#d4a843" }}>Partner / Sow</h3>
-            <p className="text-amber-100/80 text-sm">Support the ministry and help advance the Kingdom.</p>
+            <h3 className="font-black text-base mb-1" style={{ color: "#d4a843" }}>❤️ Partner / Sow</h3>
+            <p className="text-amber-100/90 text-sm">Support the ministry and help advance the Kingdom.</p>
           </KCard>
         </a>
+
+        <InstallApp />
       </div>
     </PageWrapper>
   );

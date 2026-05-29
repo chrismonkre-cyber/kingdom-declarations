@@ -15,7 +15,7 @@ export default function Daily() {
   const next = () => setIndex((i) => (i === DAILY_DECLARATIONS.length - 1 ? 0 : i + 1));
 
   return (
-    <PageWrapper images={IMAGES.daily} overlay="rgba(0,0,0,0.22)">
+    <PageWrapper images={IMAGES.daily} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Daily Declaration" />
         <p className="text-amber-100/80 text-center text-sm mb-6">Rotate through 7 powerful declarations — or browse them all.</p>

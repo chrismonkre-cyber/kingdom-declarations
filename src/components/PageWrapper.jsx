@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function PageWrapper({ images, children, overlay = "rgba(0,0,0,0.25)" }) {
+export default function PageWrapper({ images, children, overlay = "rgba(0,0,0,0.10)" }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {

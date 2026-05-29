@@ -41,7 +41,7 @@ export default function Journal() {
   };
 
   return (
-    <PageWrapper images={IMAGES.journal} overlay="rgba(0,0,0,0.25)">
+    <PageWrapper images={IMAGES.journal} overlay="rgba(0,0,0,0.10)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Declaration Journal" />
         <p className="text-amber-100/80 text-center text-sm mb-8">Write, save, and reflect on your declarations. Saved in your browser.</p>
