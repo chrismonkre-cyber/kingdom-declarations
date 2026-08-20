@@ -10,7 +10,7 @@ export default function Declarations() {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <PageWrapper images={IMAGES.declarations} overlay="rgba(0,0,0,0.10)">
+    <PageWrapper images={IMAGES.declarations} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Declaration Categories" />
         <p className="text-amber-200 text-center text-sm mb-8">Choose a category and declare God's Word with boldness.</p>
@@ -36,10 +36,10 @@ export default function Declarations() {
                   <KCard className="mt-1 space-y-4 animate-in fade-in duration-200">
                     <div>
                       <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">📖 {cat.scripture}</p>
-                      <p className="text-amber-100/90 text-sm italic">"{cat.scriptureText}"</p>
+                      <p className="text-white text-sm italic">"{cat.scriptureText}"</p>
                     </div>
 
-                    <p className="text-amber-100/85 text-sm leading-relaxed">{cat.encouragement}</p>
+                    <p className="text-white5 text-sm leading-relaxed">{cat.encouragement}</p>
 
                     <div className="space-y-2">
                       <p className="text-amber-400 font-bold text-xs uppercase tracking-wider">🔥 Declarations</p>
@@ -56,12 +56,12 @@ export default function Declarations() {
 
                     <div>
                       <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">🙏 Prayer</p>
-                      <p className="text-amber-100/85 text-sm italic leading-relaxed">{cat.prayer}</p>
+                      <p className="text-white text-sm italic leading-relaxed">{cat.prayer}</p>
                     </div>
 
                     <div>
                       <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">⚡ Action Step</p>
-                      <p className="text-amber-100/85 text-sm leading-relaxed">{cat.actionStep}</p>
+                      <p className="text-white text-sm leading-relaxed">{cat.actionStep}</p>
                     </div>
                   </KCard>
                 )}
