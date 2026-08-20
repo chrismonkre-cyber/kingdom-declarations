@@ -15,10 +15,10 @@ export default function Daily() {
   const next = () => setIndex((i) => (i === DAILY_DECLARATIONS.length - 1 ? 0 : i + 1));
 
   return (
-    <PageWrapper images={IMAGES.daily} overlay="rgba(0,0,0,0.10)">
+    <PageWrapper images={IMAGES.daily} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Daily Declaration" />
-        <p className="text-amber-100/80 text-center text-sm mb-6">Rotate through 7 powerful declarations — or browse them all.</p>
+        <p className="text-white text-center text-sm mb-6">Rotate through 7 powerful declarations — or browse them all.</p>
 
         {/* Nav arrows */}
         <div className="flex items-center justify-center gap-4 mb-6">
@@ -36,17 +36,17 @@ export default function Daily() {
 
           <div>
             <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">📖 {d.scripture}</p>
-            <p className="text-amber-100/90 text-sm italic leading-relaxed">"{d.scriptureText}"</p>
+            <p className="text-white text-sm italic leading-relaxed">"{d.scriptureText}"</p>
           </div>
 
           <div>
             <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">Encouragement</p>
-            <p className="text-amber-100/85 text-sm leading-relaxed">{d.encouragement}</p>
+            <p className="text-white text-sm leading-relaxed">{d.encouragement}</p>
           </div>
 
           <div>
             <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">🙏 Prayer</p>
-            <p className="text-amber-100/85 text-sm leading-relaxed italic">{d.prayer}</p>
+            <p className="text-white text-sm leading-relaxed italic">{d.prayer}</p>
           </div>
 
           <div className="border border-amber-500/20 rounded-xl p-4" style={{ background: "rgba(212,168,67,0.08)" }}>
@@ -56,12 +56,12 @@ export default function Daily() {
 
           <div>
             <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">⚡ Action Step</p>
-            <p className="text-amber-100/85 text-sm leading-relaxed">{d.actionStep}</p>
+            <p className="text-white text-sm leading-relaxed">{d.actionStep}</p>
           </div>
 
           <div>
             <p className="text-amber-400 font-bold text-xs uppercase tracking-wider mb-1">💭 Reflection</p>
-            <p className="text-amber-100/85 text-sm leading-relaxed italic">{d.reflection}</p>
+            <p className="text-white text-sm leading-relaxed italic">{d.reflection}</p>
           </div>
         </KCard>
       </div>
