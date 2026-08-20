@@ -41,10 +41,10 @@ export default function Journal() {
   };
 
   return (
-    <PageWrapper images={IMAGES.journal} overlay="rgba(0,0,0,0.10)">
+    <PageWrapper images={IMAGES.journal} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Declaration Journal" />
-        <p className="text-amber-100/80 text-center text-sm mb-8">Write, save, and reflect on your declarations. Saved in your browser.</p>
+        <p className="text-white text-center text-sm mb-8">Write, save, and reflect on your declarations. Saved in your browser.</p>
 
         {/* Form */}
         <KCard className="space-y-4 mb-8">
@@ -85,7 +85,7 @@ export default function Journal() {
                   entry[key] ? (
                     <div key={key}>
                       <p className="text-amber-400/70 text-xs font-semibold">{label}</p>
-                      <p className="text-amber-100/85 text-sm">{entry[key]}</p>
+                      <p className="text-white text-sm">{entry[key]}</p>
                     </div>
                   ) : null
                 )}
