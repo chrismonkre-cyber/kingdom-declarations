@@ -29,18 +29,18 @@ const LINKS = [
 
 export default function About() {
   return (
-    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.10)">
+    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="About" />
         <p className="text-amber-100/80 text-center text-sm mb-8">Kingdom Mandate Ministry</p>
 
         <KCard className="space-y-5 mb-8">
-          <p className="text-amber-100/90 text-sm leading-relaxed">
+          <p className="text-white text-sm leading-relaxed">
             <strong className="text-amber-300">Kingdom Declarations</strong> is a Kingdom Mandate Ministry resource created to help believers speak the Word, renew the mind, stand in faith, and declare God{"'"}s truth with boldness and power.
           </p>
           <div className="border-t border-amber-500/20 pt-4">
             <h3 className="font-black text-base mb-2" style={{ color: "#d4a843" }}>Our Mission</h3>
-            <p className="text-amber-100/85 text-sm italic leading-relaxed">
+            <p className="text-white5 text-sm italic leading-relaxed">
               Kingdom Mandate Ministry exists to advance the Kingdom through The Holy Spirit, Healing {"&"} Power.
             </p>
           </div>
