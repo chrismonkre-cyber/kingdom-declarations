@@ -32,7 +32,7 @@ export default function About() {
     <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="About" />
-        <p className="text-amber-100/80 text-center text-sm mb-8">Kingdom Mandate Ministry</p>
+        <p className="text-white text-center text-sm mb-8">Kingdom Mandate Ministry</p>
 
         <KCard className="space-y-5 mb-8">
           <p className="text-white text-sm leading-relaxed">
@@ -40,7 +40,7 @@ export default function About() {
           </p>
           <div className="border-t border-amber-500/20 pt-4">
             <h3 className="font-black text-base mb-2" style={{ color: "#d4a843" }}>Our Mission</h3>
-            <p className="text-white5 text-sm italic leading-relaxed">
+            <p className="text-white text-sm italic leading-relaxed">
               Kingdom Mandate Ministry exists to advance the Kingdom through The Holy Spirit, Healing {"&"} Power.
             </p>
           </div>
