@@ -8,10 +8,10 @@ import { ExternalLink, Mail } from "lucide-react";
 
 export default function Resources() {
   return (
-    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.10)">
+    <PageWrapper images={IMAGES.resources} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Kingdom Resources" />
-        <p className="text-amber-100/80 text-center text-sm mb-8">Connect with the Kingdom Mandate Ministry ecosystem.</p>
+        <p className="text-white text-center text-sm mb-8">Connect with the Kingdom Mandate Ministry ecosystem.</p>
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
           {RESOURCES.map((r) => (
@@ -21,7 +21,7 @@ export default function Resources() {
                   <h3 className="font-black text-base" style={{ color: "#d4a843" }}>{r.title}</h3>
                   <ExternalLink className="w-4 h-4 text-amber-400/50 group-hover:text-amber-300 transition-colors flex-shrink-0 mt-0.5" />
                 </div>
-                <p className="text-amber-100/80 text-sm">{r.description}</p>
+                <p className="text-white text-sm">{r.description}</p>
               </KCard>
             </a>
           ))}
@@ -45,7 +45,7 @@ export default function Resources() {
         <a href="https://www.paypal.com/donate/?business=kingdommm.chris%40gmail.com" target="_blank" rel="noopener noreferrer" className="block mb-4">
           <KCard className="text-center hover:border-amber-400/50 transition-all">
             <h3 className="font-black text-base mb-1" style={{ color: "#d4a843" }}>❤️ Partner / Sow</h3>
-            <p className="text-amber-100/90 text-sm">Support the ministry and help advance the Kingdom.</p>
+            <p className="text-white text-sm">Support the ministry and help advance the Kingdom.</p>
           </KCard>
         </a>
 
