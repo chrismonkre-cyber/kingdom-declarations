@@ -13,7 +13,7 @@ export default function Declarations() {
     <PageWrapper images={IMAGES.declarations} overlay="rgba(0,0,0,0.35)">
       <div className="max-w-3xl mx-auto px-4 pt-12 md:pt-20 pb-12">
         <PageHeader title="Declaration Categories" />
-        <p className="text-white text-center text-sm mb-8">Choose a category and declare God's Word with boldness.</p>
+        <p className="text-white text-center text-base mb-8">Choose a category and declare God's Word with boldness.</p>
 
         <div className="space-y-3">
           {DECLARATION_CATEGORIES.map((cat) => {
@@ -49,7 +49,7 @@ export default function Declarations() {
                           className="border border-amber-500/15 rounded-lg p-3"
                           style={{ background: "rgba(212,168,67,0.06)" }}
                         >
-                          <p className="text-white text-sm font-semibold leading-relaxed">{dec}</p>
+                          <p className="text-white text-base font-semibold leading-relaxed">{dec}</p>
                         </div>
                       ))}
                     </div>
